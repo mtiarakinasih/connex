@@ -6,6 +6,11 @@ from simpleq import queue_page
 from hotspot import hotspot_page
 from firewall import firewall_page
 
+st.set_page_config(
+    page_title="CONNEX | Stay Connected ",
+    page_icon="🛜"
+)
+
 # Initialize session states
 if "page" not in st.session_state:
     st.session_state.page = "login"
